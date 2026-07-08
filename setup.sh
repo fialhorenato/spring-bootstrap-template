@@ -55,7 +55,8 @@ find . -name "*.kt" -type f | while read -r file; do
 done
 
 # Update package declarations in all kotlin files
-find . -name "*.kt" -type f -exec sed -i '' 's/com\.renato\.springbootstrap/'"$PACKAGE_NAME"'/g' {} \;
+# Replace com.renato.springbootstrap with com.company.springboottemplate
+find . -name "*.kt" -type f -exec sed -i '' 's/com\.renato\.springbootstrap/com.'"$COMPANY_NAME".springbootstrap/g' {} \;
 echo "✅ Package names and folder structure updated"
 echo ""
 

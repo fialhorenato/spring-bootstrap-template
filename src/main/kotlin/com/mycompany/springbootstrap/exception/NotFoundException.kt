@@ -1,0 +1,3 @@
+package com.mycompany.springbootstrap.exception
+
+class NotFoundException(message: String, cause: Throwable? = null) : RuntimeException(message, cause)
