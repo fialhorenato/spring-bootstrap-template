@@ -1,7 +1,7 @@
-package com.mycompany.springbootstrap.security.api.response
+package com.mycompany.springboottemplate.security.api.response
 
-import com.mycompany.springbootstrap.security.domain.UserSecurity
-import com.mycompany.springbootstrap.security.entity.UserEntity
+import com.mycompany.springboottemplate.security.domain.UserSecurity
+import com.mycompany.springboottemplate.security.entity.UserEntity
 import java.util.UUID
 
 

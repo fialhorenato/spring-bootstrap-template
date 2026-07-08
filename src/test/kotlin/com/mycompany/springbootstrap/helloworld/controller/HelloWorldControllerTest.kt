@@ -1,4 +1,4 @@
-package com.mycompany.helloworld.controller
+package com.mycompany.springboottemplate.helloworld.controller
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test

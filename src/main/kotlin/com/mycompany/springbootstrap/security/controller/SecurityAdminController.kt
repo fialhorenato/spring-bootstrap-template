@@ -1,8 +1,8 @@
-package com.mycompany.springbootstrap.security.controller
+package com.mycompany.springboottemplate.security.controller
 
-import com.mycompany.springbootstrap.security.api.request.UpdateUserRequestDTO
-import com.mycompany.springbootstrap.security.api.response.UserResponseDTO
-import com.mycompany.springbootstrap.security.service.UserService
+import com.mycompany.springboottemplate.security.api.request.UpdateUserRequestDTO
+import com.mycompany.springboottemplate.security.api.response.UserResponseDTO
+import com.mycompany.springboottemplate.security.service.UserService
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.PageImpl
 import org.springframework.data.domain.Pageable

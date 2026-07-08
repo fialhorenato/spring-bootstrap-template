@@ -1,8 +1,8 @@
 package com.mycompany.springboottemplate.security.controller
 
 import com.mycompany.springboottemplate.factory.UserFactory
-import com.mycompany.springboottemplate.springboottemplate.security.api.request.UpdateUserRequestDTO
-import com.mycompany.springboottemplate.springboottemplate.security.service.UserService
+import com.mycompany.springboottemplate.security.api.request.UpdateUserRequestDTO
+import com.mycompany.springboottemplate.security.service.UserService
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith

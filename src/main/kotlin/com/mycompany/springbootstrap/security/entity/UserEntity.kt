@@ -1,4 +1,4 @@
-package com.mycompany.springbootstrap.security.entity
+package com.mycompany.springboottemplate.security.entity
 
 import jakarta.persistence.*
 import org.springframework.data.annotation.CreatedDate

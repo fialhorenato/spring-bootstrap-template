@@ -1,4 +1,4 @@
-package com.mycompany.springbootstrap.security.utils
+package com.mycompany.springboottemplate.security.utils
 
 import com.nimbusds.jose.JOSEException
 import com.nimbusds.jose.JWSAlgorithm.HS256
@@ -8,8 +8,8 @@ import com.nimbusds.jose.Payload
 import com.nimbusds.jose.crypto.MACSigner
 import com.nimbusds.jose.crypto.MACVerifier
 import com.nimbusds.jwt.JWTClaimsSet
-import com.mycompany.springbootstrap.security.domain.UserSecurity
-import com.mycompany.springbootstrap.security.exception.JwtException
+import com.mycompany.springboottemplate.security.domain.UserSecurity
+import com.mycompany.springboottemplate.security.exception.JwtException
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Value

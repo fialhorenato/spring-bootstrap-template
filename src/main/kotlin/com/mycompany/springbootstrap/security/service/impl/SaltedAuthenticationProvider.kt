@@ -1,6 +1,6 @@
-package com.mycompany.springbootstrap.security.service.impl
+package com.mycompany.springboottemplate.security.service.impl
 
-import com.mycompany.springbootstrap.security.domain.UserSecurity
+import com.mycompany.springboottemplate.security.domain.UserSecurity
 import org.springframework.security.authentication.AuthenticationProvider
 import org.springframework.security.authentication.BadCredentialsException
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken

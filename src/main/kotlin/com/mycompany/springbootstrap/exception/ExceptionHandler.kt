@@ -1,8 +1,8 @@
-package com.mycompany.springbootstrap.exception
+package com.mycompany.springboottemplate.exception
 
-import com.mycompany.springbootstrap.api.response.GeneralFailureResponse
-import com.mycompany.springbootstrap.security.exception.JwtException
-import com.mycompany.springbootstrap.security.exception.UserAlreadyExistsException
+import com.mycompany.springboottemplate.api.response.GeneralFailureResponse
+import com.mycompany.springboottemplate.security.exception.JwtException
+import com.mycompany.springboottemplate.security.exception.UserAlreadyExistsException
 import jakarta.servlet.http.HttpServletRequest
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory

@@ -1,4 +1,4 @@
-package com.mycompany.springbootstrap.api.response
+package com.mycompany.springboottemplate.api.response
 
 import java.time.Instant
 

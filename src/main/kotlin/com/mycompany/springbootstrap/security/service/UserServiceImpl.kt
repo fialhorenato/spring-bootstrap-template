@@ -1,13 +1,13 @@
-package com.mycompany.springbootstrap.security.service
+package com.mycompany.springboottemplate.security.service
 
-import com.mycompany.springbootstrap.exception.NotFoundException
-import com.mycompany.springbootstrap.security.domain.UserSecurity
-import com.mycompany.springbootstrap.security.entity.RoleEntity
-import com.mycompany.springbootstrap.security.entity.UserEntity
-import com.mycompany.springbootstrap.security.exception.UserAlreadyExistsException
-import com.mycompany.springbootstrap.security.repository.RoleRepository
-import com.mycompany.springbootstrap.security.repository.UserRepository
-import com.mycompany.springbootstrap.security.utils.JwtUtils
+import com.mycompany.springboottemplate.exception.NotFoundException
+import com.mycompany.springboottemplate.security.domain.UserSecurity
+import com.mycompany.springboottemplate.security.entity.RoleEntity
+import com.mycompany.springboottemplate.security.entity.UserEntity
+import com.mycompany.springboottemplate.security.exception.UserAlreadyExistsException
+import com.mycompany.springboottemplate.security.repository.RoleRepository
+import com.mycompany.springboottemplate.security.repository.UserRepository
+import com.mycompany.springboottemplate.security.utils.JwtUtils
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.security.access.AccessDeniedException

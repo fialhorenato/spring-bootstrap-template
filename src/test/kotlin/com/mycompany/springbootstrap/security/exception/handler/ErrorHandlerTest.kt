@@ -2,8 +2,8 @@ package com.mycompany.springboottemplate.security.exception.handler
 
 import com.mycompany.springboottemplate.api.response.GeneralFailureResponse
 import com.mycompany.springboottemplate.exception.ExceptionHandler
-import com.mycompany.springboottemplate.springboottemplate.security.exception.JwtException
-import com.mycompany.springboottemplate.springboottemplate.security.exception.UserAlreadyExistsException
+import com.mycompany.springboottemplate.security.exception.JwtException
+import com.mycompany.springboottemplate.security.exception.UserAlreadyExistsException
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test

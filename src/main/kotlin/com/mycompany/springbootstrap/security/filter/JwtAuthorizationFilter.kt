@@ -1,6 +1,6 @@
-package com.mycompany.springbootstrap.security.filter
+package com.mycompany.springboottemplate.security.filter
 
-import com.mycompany.springbootstrap.security.utils.JwtUtils
+import com.mycompany.springboottemplate.security.utils.JwtUtils
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse

@@ -1,4 +1,4 @@
-package com.mycompany.springbootstrap.helloworld.controller
+package com.mycompany.springboottemplate.helloworld.controller
 
 import org.springframework.security.access.annotation.Secured
 import org.springframework.web.bind.annotation.GetMapping

@@ -1,7 +1,7 @@
 package com.mycompany.springboottemplate.security.filter
 
-import com.mycompany.springboottemplate.springboottemplate.security.domain.UserSecurity
-import com.mycompany.springboottemplate.springboottemplate.security.utils.JwtUtils
+import com.mycompany.springboottemplate.security.domain.UserSecurity
+import com.mycompany.springboottemplate.security.utils.JwtUtils
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse

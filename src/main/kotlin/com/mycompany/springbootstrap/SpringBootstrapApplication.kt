@@ -1,4 +1,4 @@
-package com.mycompany.springbootstrap
+package com.mycompany.springboottemplate
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

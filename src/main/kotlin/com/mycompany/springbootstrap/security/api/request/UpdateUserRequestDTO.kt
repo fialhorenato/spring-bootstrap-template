@@ -1,4 +1,4 @@
-package com.mycompany.springbootstrap.security.api.request
+package com.mycompany.springboottemplate.security.api.request
 
 data class UpdateUserRequestDTO(
     val email: String,

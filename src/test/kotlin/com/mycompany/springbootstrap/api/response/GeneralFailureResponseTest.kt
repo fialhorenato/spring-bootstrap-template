@@ -1,4 +1,4 @@
-package com.mycompany.api.response
+package com.mycompany.springboottemplate.api.response
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test

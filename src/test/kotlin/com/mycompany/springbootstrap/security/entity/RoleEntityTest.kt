@@ -2,8 +2,8 @@ package com.mycompany.springboottemplate.security.entity
 
 import com.mycompany.springboottemplate.factory.RoleFactory
 import com.mycompany.springboottemplate.factory.UserFactory
-import com.mycompany.springboottemplate.springboottemplate.security.repository.RoleRepository
-import com.mycompany.springboottemplate.springboottemplate.security.repository.UserRepository
+import com.mycompany.springboottemplate.security.repository.RoleRepository
+import com.mycompany.springboottemplate.security.repository.UserRepository
 import jakarta.persistence.FetchType
 import jakarta.persistence.ManyToOne
 import org.assertj.core.api.Assertions.assertThat

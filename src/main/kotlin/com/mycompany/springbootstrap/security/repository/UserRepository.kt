@@ -1,6 +1,6 @@
-package com.mycompany.springbootstrap.security.repository
+package com.mycompany.springboottemplate.security.repository
 
-import com.mycompany.springbootstrap.security.entity.UserEntity
+import com.mycompany.springboottemplate.security.entity.UserEntity
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 

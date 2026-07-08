@@ -1,9 +1,9 @@
-package com.mycompany.springbootstrap.security.controller
+package com.mycompany.springboottemplate.security.controller
 
-import com.mycompany.springbootstrap.security.api.request.LoginRequestDTO
-import com.mycompany.springbootstrap.security.api.request.SignupRequestDTO
-import com.mycompany.springbootstrap.security.api.response.UserResponseDTO
-import com.mycompany.springbootstrap.security.service.UserService
+import com.mycompany.springboottemplate.security.api.request.LoginRequestDTO
+import com.mycompany.springboottemplate.security.api.request.SignupRequestDTO
+import com.mycompany.springboottemplate.security.api.response.UserResponseDTO
+import com.mycompany.springboottemplate.security.service.UserService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*

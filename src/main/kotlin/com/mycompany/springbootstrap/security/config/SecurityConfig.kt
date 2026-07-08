@@ -1,7 +1,7 @@
-package com.mycompany.springbootstrap.security.config
+package com.mycompany.springboottemplate.security.config
 
-import com.mycompany.springbootstrap.security.filter.JwtAuthorizationFilter
-import com.mycompany.springbootstrap.security.service.impl.SaltedAuthenticationProvider
+import com.mycompany.springboottemplate.security.filter.JwtAuthorizationFilter
+import com.mycompany.springboottemplate.security.service.impl.SaltedAuthenticationProvider
 import org.springframework.boot.security.autoconfigure.actuate.web.servlet.EndpointRequest.toAnyEndpoint
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

@@ -1,7 +1,7 @@
-package com.mycompany.factory
+package com.mycompany.springboottemplate.factory
 
-import com.mycompany.springboottemplate.springboottemplate.security.entity.RoleEntity
-import com.mycompany.springboottemplate.springboottemplate.security.entity.UserEntity
+import com.mycompany.springboottemplate.security.entity.RoleEntity
+import com.mycompany.springboottemplate.security.entity.UserEntity
 import java.util.UUID
 
 object RoleFactory {

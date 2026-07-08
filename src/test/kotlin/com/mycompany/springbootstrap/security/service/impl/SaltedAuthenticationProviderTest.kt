@@ -1,6 +1,6 @@
 package com.mycompany.springboottemplate.security.service.impl
 
-import com.mycompany.springboottemplate.springboottemplate.security.domain.UserSecurity
+import com.mycompany.springboottemplate.security.domain.UserSecurity
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows

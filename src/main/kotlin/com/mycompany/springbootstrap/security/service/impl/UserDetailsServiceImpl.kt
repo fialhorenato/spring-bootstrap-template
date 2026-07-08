@@ -1,7 +1,7 @@
-package com.mycompany.springbootstrap.security.service.impl
+package com.mycompany.springboottemplate.security.service.impl
 
-import com.mycompany.springbootstrap.security.domain.UserSecurity
-import com.mycompany.springbootstrap.security.repository.UserRepository
+import com.mycompany.springboottemplate.security.domain.UserSecurity
+import com.mycompany.springboottemplate.security.repository.UserRepository
 import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UserDetailsService

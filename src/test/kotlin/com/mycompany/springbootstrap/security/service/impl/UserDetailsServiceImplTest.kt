@@ -2,7 +2,7 @@ package com.mycompany.springboottemplate.security.service.impl
 
 import com.mycompany.springboottemplate.factory.RoleFactory
 import com.mycompany.springboottemplate.factory.UserFactory
-import com.mycompany.springboottemplate.springboottemplate.security.repository.UserRepository
+import com.mycompany.springboottemplate.security.repository.UserRepository
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
