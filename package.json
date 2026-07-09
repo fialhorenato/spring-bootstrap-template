@@ -1,0 +1,16 @@
+{
+  "name": "generator-spring-bootstrap",
+  "version": "0.1.0",
+  "description": "Yeoman generator for Spring Bootstrap Kotlin template",
+  "main": "generators/app/index.js",
+  "files": ["generators"],
+  "keywords": ["yeoman-generator"],
+  "license": "MIT",
+  "bin": {
+    "yo-spring-bootstrap": "generators/app/index.js"
+  },
+  "dependencies": {
+    "yeoman-generator": "^5.7.0",
+    "glob": "^10.2.7"
+  }
+}
