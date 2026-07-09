@@ -20,7 +20,7 @@ jobs:
       - name: Approve a PR
         run: gh pr review --approve "$PR_URL"
         env:
-          PR_URL: ${{github.event.pull_request.html_url}}
+          PR_URL: ${{github.event.workflow_run.pull_requests[0].html_url}}
           GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
   auto-merge:
     permissions: write-all
@@ -39,6 +39,6 @@ jobs:
       - name: Enable auto-merge for Dependabot PRs
         run: gh pr merge --auto --merge "$PR_URL"
         env:
-          PR_URL: ${{github.event.pull_request.html_url}}
+          PR_URL: ${{github.event.workflow_run.pull_requests[0].html_url}}
           GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
