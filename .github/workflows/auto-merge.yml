@@ -1,7 +1,7 @@
 name: auto-merge.yml
 on:
   workflow_run:
-    workflows: [ "Pull Request Workflow" ]
+    workflows: [ Pull Request Workflow ]
     types:
       - completed
 
