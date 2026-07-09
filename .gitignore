@@ -307,3 +307,5 @@ gradle-app.setting
 .env
 .env.local
 .env.*.local
+
+node_modules
