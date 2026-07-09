@@ -9,10 +9,6 @@ jobs:
   guard-pr-context:
     permissions: read-all
     runs-on: ubuntu-latest
-    if: |
-      github.actor == 'dependabot[bot]' &&
-      github.event.workflow_run.conclusion == 'success' &&
-      github.event.workflow_run.event == 'pull_request'
     outputs:
       pr-number: ${{ steps.resolve-pr.outputs.pr-number }}
     steps:
@@ -29,19 +25,28 @@ jobs:
               return;
             }
 
-            core.setOutput('pr-number', String(pullRequests[0].number));
+            const prNumber = pullRequests[0].number;
+            const { data: pullRequest } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+            });
+
+            if (pullRequest.user?.login !== 'dependabot[bot]') {
+              core.setFailed(`Pull request #${prNumber} is from ${pullRequest.user?.login ?? 'an unknown author'}, not Dependabot.`);
+              return;
+            }
+
+            core.setOutput('pr-number', String(prNumber));
   auto-approval:
     permissions: write-all
     runs-on: ubuntu-latest
     needs: guard-pr-context
-    if: |
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request' &&
       needs.guard-pr-context.result == 'success'
     steps:
-      - name: Dependabot metadata
-        id: metadata
-        uses: dependabot/fetch-metadata@v3
-        with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Approve a PR
         run: gh pr review --approve "$PR_NUMBER"
         env:
@@ -53,14 +58,11 @@ jobs:
     needs:
       - guard-pr-context
       - auto-approval
-    if: |
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request' &&
       needs.guard-pr-context.result == 'success'
     steps:
-      - name: Dependabot metadata
-        id: metadata
-        uses: dependabot/fetch-metadata@v3
-        with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Enable auto-merge for Dependabot PRs
         run: gh pr merge --auto --merge "$PR_NUMBER"
         env:
