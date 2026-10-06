@@ -1,4 +1,4 @@
-FROM eclipse-temurin:26-jdk-alpine AS builder
+FROM eclipse-temurin:27-jdk-alpine AS builder
 
 WORKDIR /build
 ARG JAR_FILE=build/libs/app.jar
